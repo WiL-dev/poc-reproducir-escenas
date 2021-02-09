@@ -1,0 +1,26 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": [
+            ">=1%",
+            "not ie 11",
+            "not op_mini all"
+          ]
+        },
+        "useBuiltIns": "usage",
+        "corejs": 3
+        //,"debug": true
+      }
+    ]
+    //,"minify"
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-private-methods",
+    "@babel/transform-runtime"
+  ],
+  "comments": false
+}
