@@ -50,6 +50,69 @@ html, body{
   height: 100%;
 }
 
+body{
+  background-color: #1e1e1e;
+	color: #ddd;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+	color: #D7BA7D
+}
+
+a:visited {
+	color: cadetblue;
+}
+
+.ancho-pantalla-completa {
+	width: 100vw;
+	position: relative;
+}
+
+.alto-pantalla-completa {
+	height: 100vh;
+	width: 100%;
+	overflow-y: scroll;
+}
+
+.alto-pantalla-completa::-webkit-scrollbar,
+.alto-pantalla-completa::-webkit-scrollbar-thumb {
+  overflow: hidden;
+	width: 0;
+	height: 0;
+}
+
+.telon {
+	height: 120%;
+	width: 100%;
+	background-color: blanchedalmond;
+}
+
+.intro {
+	height: 84vh;
+	top: -16vh;
+	position: relative;
+}
+
+.titulo {
+	font-size: 64pt;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-variant: small-caps;
+	text-align: center;
+}
+
+.centrar-horizontal {
+	margin: 22pt 0;
+	text-align: center;
+}
+
+.video-instructivo {
+	background-color: #f66;
+	width: 60vw;
+	height: 60vh;
+	display: inline-block;
+}
+
 
 .video {
   display: block;

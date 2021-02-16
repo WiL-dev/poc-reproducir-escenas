@@ -1,6 +1,6 @@
 "use strict";
 
-export class VideoClip {
+class VideoClip {
   #elementoDOM;
   #esFinBucle;
 
@@ -55,3 +55,5 @@ export class VideoClip {
     this.#esFinBucle = true;
   }
 }
+
+export { VideoClip }

@@ -1,6 +1,6 @@
 "use strict";
 
-import { VideoClip } from "./video_clip";
+import { VideoClip } from './video_clip';
 
 
 class Escena {

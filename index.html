@@ -5,10 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="recursos/css/estilos.css">
-  <script src="recursos/js/main.js"></script>
+  <!-- <script src="recursos/js/main.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 </head>
 <body>
-  <video id="obra_teatro" class="video" muted="true" src="recursos/video/plano_secuencia.mp4"></video>
-  <img id="dado" src="recursos/img/dado.gif" alt="dado">
+  <div class="ancho-pantalla-completa">
+    <div id="barra-escondida" class="alto-pantalla-completa" >
+      <div id="telon-id" class="telon"></div>
+      <div class="intro">
+        <div class="titulo">Parqués</div>
+        <div class="centrar-horizontal">
+          <div class="video-instructivo"></div>
+        </div>
+        <div class="centrar-horizontal">
+          <a href="#">Comenzar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <video id="obra_teatro" class="video" muted="true" src="recursos/video/plano_secuencia.mp4"></video>
+  <img id="dado" src="recursos/img/dado.gif" alt="dado"> -->
+  <script>
+    const barraEscondida = $("#barra-escondida");
+    const scrollMaximo = barraEscondida[0].scrollHeight - barraEscondida.outerHeight();
+
+    barraEscondida.scroll(function () {
+      $("#telon-id").css("opacity", 1 - barraEscondida.scrollTop() / scrollMaximo);
+    });
+  </script>
 </body>
 </html>
