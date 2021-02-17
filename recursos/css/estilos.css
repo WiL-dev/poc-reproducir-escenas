@@ -82,27 +82,55 @@ a:visited {
 	height: 0;
 }
 
-.telon {
-	height: 120%;
-	width: 100%;
-	background-color: blanchedalmond;
+.boton {
+	cursor: pointer;
 }
 
-.intro {
-	height: 84vh;
+.frase-telon {
+	position: absolute;
+	left: 10vw;
+	bottom: 30vh;
+	z-index: 89;
+	font-size: 40pt;
+	color: #1e1e1e;
+}
+
+.scroll-abajo {
+	position: absolute;
+	right: 10vw;
+	bottom: 10vh;
+	z-index: 99;
+}
+
+.telon {
+	height: 120vh;
+	width: 100%;
+	background-color: #ffebcd;
+	z-index: 10;
+}
+
+.escenario {
+	height: 80vh;
 	top: -16vh;
 	position: relative;
 }
 
+.intro {
+	position: absolute;
+	top:0;
+	height: 100%;
+	width: 100%;
+}
+
 .titulo {
-	font-size: 64pt;
+	font-size: 54pt;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-variant: small-caps;
 	text-align: center;
 }
 
 .centrar-horizontal {
-	margin: 22pt 0;
+	margin: 14pt 0;
 	text-align: center;
 }
 
@@ -120,6 +148,19 @@ a:visited {
   margin-right: auto;
   height: 100%;
 }
+
+.btn-comenzar {
+	display: inline-block;
+}
+
+.seleccion-personajes {
+	position: absolute;
+	top:0;
+	display: none;
+	height: 100%;
+	width: 100%;
+}
+
 
 #dado {
   position: absolute;
