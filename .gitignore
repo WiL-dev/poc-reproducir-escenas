@@ -1,2 +1,4 @@
 recursos/js/*
 node_modules
+recursos/video/*
+!recurso/video/plano_seciencia.mp4
