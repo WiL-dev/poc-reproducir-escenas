@@ -86,6 +86,28 @@ a:visited {
 	cursor: pointer;
 }
 
+.loader {
+  border: 16px solid transparent;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  border-bottom: 16px solid #3498db;
+  width: 16vh;
+  height: 16vh;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
 .frase-telon {
 	position: absolute;
 	left: 10vw;
@@ -135,9 +157,8 @@ a:visited {
 }
 
 .video-instructivo {
-	background-color: #f66;
-	width: 60vw;
-	height: 60vh;
+	width: 36vw;
+	height: 20.25vw;
 	display: inline-block;
 	position: relative;
 	z-index: 110;
@@ -152,6 +173,10 @@ a:visited {
 	width: 100%;
 }
 
+.loader-instructivo {
+	margin: auto;
+}
+
 .boton-reproducir-overlay {
 	position: absolute;
 	display: flex;
@@ -164,6 +189,7 @@ a:visited {
 .boton-reproducir {
 	margin: auto;
 	height: 60%;
+	display: none;
 }
 
 .tablero {
